@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="image/logo.ico">
+  <title>MINEMAZE</title>
+  <link rel="stylesheet" href="./css/game.css">
+</head>
+<body>
+  <div id="stats"></div>
+
+  <audio id="bgm" src="./audio/bgMusic.mp3"></audio>
+
+  <div id="blocker">        
+    <div id="instructions">
+      <button onclick="window.location.href='index.html'" type="button">回主選單</button>
+      <button id="start" type="button">開始遊戲</button>
+      <button id="restart" onclick="window.location.href='game.html'" type="button">重新開始</button>
+      <div class="operation">
+        W, A, S, D：控制移動方向<br />
+        SPACE：跳躍<br />
+        滑鼠：轉動視角<br />
+      </div>
+    </div>
+  </div>
+
+  <div class="game_info">
+    <div>累計時間：<div id="AccumulatingTime"></div>秒</div>
+  </div>
+
+  <script src="./lib/three.min.js"></script><!-- r98 -->
+  <script src="./lib/cannon.min.js"></script><!-- 0.6.2 -->
+  <!-- <script src="./lib/OrbitControls.js"></script> -->
+
+  <script src="./lib/PointerLockControls.js"></script>
+  <script src="./lib/OBJLoader.js"></script>
+  <!-- <script src="./lib/CannonDebugRenderer.js"></script> -->
+
+  <script src="./js/createMaze.js"></script>
+  <script src="./js/wallModule.js"></script>
+
+
+  <script src="./js/pointerLockControlsModule.js"></script>
+
+  <script src="./js/game.js"></script>
+</body>
+</html>
