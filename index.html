@@ -35,20 +35,27 @@
                 count = 1;
             }
         }
-        document.addEventListener("DOMContentLoaded",function(){
+        /*document.addEventListener("DOMContentLoaded",function(){
 
             var b=document.getElementById("loading");
             var p=b.parentNode;
             p.removeChild(b);
             document.getElementById("main").setAttribute("style","visibility:visible ;");
             
-        },false);
+        },false);*/
+
+        window.onload = function() {
+            var b=document.getElementById("loading");
+            var p=b.parentNode;
+            p.removeChild(b);
+            document.getElementById("main").setAttribute("style","visibility:visible ;");
+        };
 
     </script>
 </head>
 
 <body>
-    <div id="loading">
+    <div id="loading" style="display: block; margin-left: auto; margin-right: auto; margin-top: 50%;">
         <img src="image/loading-waiting.gif">
     </div>
     <div id="main" style="visibility: hidden;">
@@ -60,7 +67,7 @@
 
         <img onclick="window.location.href='game.html'" id="button1" class="bigButton" src="image/unchosen_Singleplayer.png" onmouseover="this.src='image/chosen_Singleplayer.png'" onmouseout="this.src='image/unchosen_Singleplayer.png'" style="margin-top: 7.5%;">
         <img onclick="window.alert('Coming Soon!')" class="bigButton" src="image/unchosen_Multiplayer.png" onmouseover="this.src='image/chosen_Multiplayer.png'" onmouseout="this.src='image/unchosen_Multiplayer.png'">
-        <img onclick="window.open('http\://github.com/YarnBall0717/3d_maze')" class="bigButton" src="unchosen_GithubCode.png" onmouseover="this.src='image/chosen_GithubCode.png'" onmouseout="this.src='image/unchosen_GithubCode.png'">
+        <img onclick="window.open('http\://github.com/YarnBall0717/3d_maze')" class="bigButton" src="image/unchosen_GithubCode.png" onmouseover="this.src='image/chosen_GithubCode.png'" onmouseout="this.src='image/unchosen_GithubCode.png'">
 
         <img onclick="sound()" id="musicButton" class="musicButton" src="image/soundOff_unchosen.png" onmouseover="this.src='image/soundOff_chosen.png'" onmouseout="this.src='image/soundOff_unchosen.png'" style="float: left; margin-left: 28%;">
 
