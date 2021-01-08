@@ -1,0 +1,28 @@
+#bgVideo { object-fit: cover;
+           width: 100vw;
+           height: 100vh;
+           position: fixed;
+           top: 0;
+           left: 0;
+           z-index: -1; }
+
+#logo { width: 50%;
+        display: block; 
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+      }
+
+.bigButton { display: block;
+             margin-left: auto;
+             margin-right: auto;
+             margin-top: 0.5%;
+             width: 35% }
+
+.smallButton { display: block;
+               margin-top: 2%;
+               width: 17%; }
+
+.musicButton { display: block;
+               margin-top: 2%;
+               width: 3.4%; }
