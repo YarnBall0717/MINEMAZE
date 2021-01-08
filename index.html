@@ -35,14 +35,6 @@
                 count = 1;
             }
         }
-        /*document.addEventListener("DOMContentLoaded",function(){
-
-            var b=document.getElementById("loading");
-            var p=b.parentNode;
-            p.removeChild(b);
-            document.getElementById("main").setAttribute("style","visibility:visible ;");
-            
-        },false);*/
 
         window.onload = function() {
             var b=document.getElementById("loading");
@@ -55,7 +47,7 @@
 </head>
 
 <body>
-    <div id="loading" style="display: block; margin-left: auto; margin-right: auto; margin-top: 50%;">
+    <div id="loading" style="position: fixed; height: 100vh; width: 100vw; text-align: center;">
         <img src="image/loading-waiting.gif">
     </div>
     <div id="main" style="visibility: hidden;">
