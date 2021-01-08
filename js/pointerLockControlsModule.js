@@ -24,7 +24,9 @@ function initPointerLockControls() {
         blocker.style.display = 'none'
         game_info[0].style.display = 'flex'
         gameData.prevTime = new Date()
-        start.textContent = '繼續遊戲'
+        document.getElementById("start").src="image/unchosen_Backtogame.png";
+        document.getElementById("start").onmouseover=function onmouseover(event){ this.src='image/chosen_Backtogame.png' };
+        document.getElementById("start").onmouseout=function onmouseout(event){ this.src='image/unchosen_Backtogame.png' };
         restart.style.display = 'inline-block'
       } else {
         controls.enabled = false/*
