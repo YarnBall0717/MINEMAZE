@@ -4,6 +4,7 @@
   <link rel="shortcut icon" href="image/logo.ico">
   <title>MINEMAZE</title>
   <link rel="stylesheet" href="./css/game.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <div id="stats"></div>
@@ -12,9 +13,12 @@
 
   <div id="blocker">        
     <div id="instructions">
-      <button onclick="window.location.href='index.html'" type="button">回主選單</button>
-      <button id="start" type="button">開始遊戲</button>
-      <button id="restart" onclick="window.location.href='game.html'" type="button">重新開始</button>
+      <!-- Start game --><!-- Back to game -->
+      <img id="start" class="bigButton" src="image/unchosen_Startgame.png" onmouseover="this.src='image/chosen_Startgame.png'" onmouseout="this.src='image/unchosen_Startgame.png'" draggable="false">
+      <!-- Restart game -->
+      <img id="restart" class="bigButton" onclick="window.location.href='game.html'" src="image/unchosen_Restartgame.png" onmouseover="this.src='image/chosen_Restartgame.png'" onmouseout="this.src='image/unchosen_Restartgame.png'" draggable="false">
+      <!-- Quit to title -->
+      <img onclick="window.location.href='index.html'" class="bigButton" src="image/unchosen_Quittotitle.png" onmouseover="this.src='image/chosen_Quittotitle.png'" onmouseout="this.src='image/unchosen_Quittotitle.png'" draggable="false">
       <div class="operation">
         W, A, S, D：控制移動方向<br />
         SPACE：跳躍<br />
