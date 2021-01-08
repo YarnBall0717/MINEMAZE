@@ -19,10 +19,10 @@ function createWall(positionX, positionZ, group)
     for (let i = 0; i < 6; i++)
     {
         if(i == 2 || i == 3)
-            wallTexture = textureLoader.load('../image/wallSkin_oak_8x8.png');
+            wallTexture = textureLoader.load('./image/wallSkin_oak_8x8.png');
 
         else
-        wallTexture = textureLoader.load('../image/wallSkin_oak_32x8.png');
+        wallTexture = textureLoader.load('./image/wallSkin_oak_32x8.png');
 
         blockMaterial.push(new THREE.MeshPhongMaterial({ map: wallTexture }));
     }
