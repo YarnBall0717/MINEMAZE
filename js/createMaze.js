@@ -58,25 +58,49 @@ function createMaze(x, y)
     }
 }
 
+function fix()
+{
+    for(let i = 0; i < 10; i++)
+        while(1)
+        {
+            let tmpx = Math.floor(Math.random() * 25);
+            let tmpy = Math.floor(Math.random() * 25);
+
+            if(tmpx != 0 && tmpx != 24 && tmpy != 0 && tmpy != 24)
+            {
+                if(maze[tmpx + 1][tmpy] == '#' && maze[tmpx - 1][tmpy] == '#' && maze[tmpx][tmpy + 1] != '#' && maze[tmpx][tmpy - 1] != '#')
+                {
+                    maze[tmpx][tmpy] = ' '
+                    break;
+                }
+
+                if(maze[tmpx + 1][tmpy] != '#' && maze[tmpx - 1][tmpy] != '#' && maze[tmpx][tmpy + 1] == '#' && maze[tmpx][tmpy - 1] == '#')
+                {
+                    maze[tmpx][tmpy] = ' '
+                    break;
+                }
+            }
+        }
+}
+
 function printMaze()
 {
     let wallGroup = new THREE.Group();
-    let message = "";
+    //let message = "";
 
     for (let i = 0; i < 2 * height + 1; i++)
     {
-        
         for (let j = 0; j < 2 * width + 1; j++)
         {
             if(maze[i][j] == "#")
                 createWall(i, j, wallGroup);
 
-            message += maze[i][j];
+            //message += maze[i][j];
         }
 
-        message += "\n";
+        //message += "\n";
     }
-    console.log(message);
+    //console.log(message);
     setMaze(wallGroup);
 }
 
@@ -84,6 +108,6 @@ function main()
 {
     initMaze();
     createMaze(1, 1);
+    fix();
     printMaze();
 }
-
