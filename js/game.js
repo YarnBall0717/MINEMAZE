@@ -129,7 +129,7 @@ function createGround() {
     groundBody.quaternion.setFromAxisAngle(new CANNON.Vec3(1, 0, 0), -Math.PI / 2)
     world.add(groundBody)
     const textureLoader = new THREE.TextureLoader()
-    const groundTexture = textureLoader.load('/image/ground_grass.png')
+    const groundTexture = textureLoader.load('./image/ground_grass.png')
     groundTexture.wrapS = groundTexture.wrapT = THREE.RepeatWrapping
     groundTexture.repeat.set(1000, 1000)
     groundTexture.anisotropy = 16
