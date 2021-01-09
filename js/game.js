@@ -199,7 +199,7 @@ function render() {
         world.step(dt)
   
         gameData.AccumulatingTime += new Date() - gameData.prevTime
-        AccumulatingTimeDOM.textContent = parseInt(gameData.AccumulatingTime / 1000)
+        AccumulatingTimeDOM.textContent = "累計時間:"+parseInt(gameData.AccumulatingTime / 1000)+"秒"
         gameData.prevTime = new Date()
 
     }
