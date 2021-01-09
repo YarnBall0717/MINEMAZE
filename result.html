@@ -3,17 +3,26 @@
   <meta charset="UTF-8">
 
   <link rel="shortcut icon" href="image/logo.ico">
-  <link rel="stylesheet" href="./css/index.css">
+  <style type="text/css">
+    div{
+        position: absolute;
+        text-align: center;
+        top:25%;
+        width: 100%;
+        height: 100%;
+        color:white;
+    }
+  </style>
   <title>MINEMAZE</title>
 </head>
 <body>
     <div>
-      <h1 class="mx-auto my-0 text-uppercase">遊戲結束</h1>
-      <h3><span >Best Record</h3><h4 id="bestScore"></h4>
+      <h1>Congratulation!</h1>
+      <h3>Best Record</h3><h4 id="bestScore"></h4>
       <h3>Finshed In</h3><h4 id="newScore"></h4>
-      <button onclick="window.location.href='index.html'" type="button">回主選單</button>
-      <button onclick="window.location.href='game.html'" type="button">再玩一次</button>
-      <button onclick="localStorage.clear()" type="button">清除記錄</button>
+      <button onclick="window.location.href='index.html'" type="button">return to title</button>
+      <button onclick="window.location.href='game.html'" type="button">play again</button>
+      <button onclick="localStorage.clear()" type="button">initialize record</button>
     </div>
   <script src="./js/result.js"></script>
 </body>
