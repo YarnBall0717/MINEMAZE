@@ -28,17 +28,17 @@
                width: 3.4%; }
 #preloader {
 /* Images you want to preload*/
-background-image: url(image/chosen_Backtogame.png);
-background-image: url(image/chosen_GithubCode.png);
-background-image: url(image/chosen_Multiplayer.png);     
-background-image: url(image/chosen_Powerpoint.png);         
-background-image: url(image/chosen_QuitGame.png);  
-background-image: url(image/chosen_Quittotitle.png);  
-background-image: url(image/chosen_Restartgame.png);  
-background-image: url(image/chosen_Singleplayer.png);  
-background-image: url(image/chosen_Startgame.png);  
-background-image: url(image/soundOn_chosen.png);  
-background-image: url(image/soundOn_unchosen.png);  
+background-image: url(../image/chosen_Backtogame.png);
+background-image: url(../image/chosen_GithubCode.png);
+background-image: url(../image/chosen_Multiplayer.png);     
+background-image: url(../image/chosen_Powerpoint.png);         
+background-image: url(../image/chosen_QuitGame.png);  
+background-image: url(../image/chosen_Quittotitle.png);  
+background-image: url(../image/chosen_Restartgame.png);  
+background-image: url(../image/chosen_Singleplayer.png);  
+background-image: url(../image/chosen_Startgame.png);  
+background-image: url(../image/soundOn_chosen.png);  
+background-image: url(../image/soundOn_unchosen.png);  
 
            
 width: 0px;
