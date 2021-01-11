@@ -37,11 +37,35 @@
         }
 
         window.onload = function() {
+
+        preload("./image/chosen_Backtogame.png",
+                "./image/chosen_GithubCode.png",
+                "./image/chosen_Multiplayer.png",
+                "./image/chosen_Powerpoint.png",
+                "./image/chosen_QuitGame.png",
+                "./image/chosen_Quittotitle.png",
+                "./image/chosen_Restartgame.png",
+                "./image/chosen_Singleplayer.png",
+                "./image/chosen_Startgame.png",
+                "./image/soundOn_chosen.png",
+                "./image/soundOn_unchosen.png")
+            
             var b=document.getElementById("loading");
             var p=b.parentNode;
             p.removeChild(b);
             document.getElementById("main").setAttribute("style","visibility:visible ;");
         };
+        
+        var images = [];
+        function preload()
+        {
+            for (var i = 0; i < arguments.length; i++)
+            {
+                images[i] = new Image();
+                images[i].src = preload.arguments[i];
+            }
+        }
+
 
     </script>
 </head>
